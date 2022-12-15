@@ -4,6 +4,7 @@ body {
     font-family: "Poppins";
     font-weight: 300;
     color: #9c9c9c;
+    background-color: black;
 }
 .wrapper {
     min-height: 100%;
@@ -12,7 +13,7 @@ body {
     overflow: clip;
 }
 
-[class*="contaiter"] {
+[class*="container"] {
     max-width: 1310px;
     margin: 0 auto;
     padding: 0px 15px;
@@ -22,3 +23,53 @@ body {
     flex: 1 1 auto;
 }
 
+.button {
+}
+
+/*HEADER*/
+
+
+.header {
+}
+
+.header__container {
+display: flex;
+align-items: center;
+min-height: 116px;
+padding-top: 5px;
+padding-bottom: 5px;
+
+}
+.header__logo {
+}
+.header__menu {
+    flex: 1 1 auto;
+}
+.menu {
+}
+.menu__icon {
+}
+.icon-menu {
+}
+.menu__list {
+}
+.menu__link {
+}
+.header__cart {
+}
+.cart-header {
+}
+.cart-header__text {
+}
+.cart-header__quantity {
+}
+.header__button {
+}
+
+.page {
+}
+.footer {
+
+}
+
+    
