@@ -5,13 +5,13 @@ body {
     font-weight: 300;
     color: #9c9c9c;
     background-color: black;
-}
+    }
 .wrapper {
     min-height: 100%;
     display: flex;
     flex-direction: column;
     overflow: clip;
-}
+  }
 
 [class*="container"] {
     max-width: 1310px;
@@ -37,11 +37,16 @@ body {
     transition: background-color 0.3s ease 0s;
     line-height: 1.43;
 }
+
+@media  {(min-width: 991.98px;)
+    .button {
+        padding: 14px 20px;
+    }    
+}
+
 .button:hover {
     background-color: #68a9f0;
 }
-
-/*HEADER*/
 
 
 .header {
@@ -55,7 +60,7 @@ body {
     padding-top: 5px;
     padding-bottom: 5px;
 
-}
+} 
 .header__logo {
 }
 .header__menu {
@@ -65,15 +70,16 @@ body {
 }
 .menu__icon {
 }
-.icon-menu {
-    display: none;
-}
+
 .menu__list {
-    column-gap: 35px;
     display: flex;
+    flex-wrap: wrap;
+    column-gap: 35px;
+    row-gap: 3px;
     justify-content: flex-end;
 }
 .menu__link {
+    display: block;
     font-size: 16px;
     color: #fff;
     line-height: 1.62; /* 26/16 */
@@ -86,6 +92,7 @@ body {
 }
 .cart-header {
     color: #fff;
+    align-items: center;
     display: flex;
     gap: 5px;
 }
@@ -111,7 +118,59 @@ body {
 
 
 }
-.header__button {
+ .header__button {
+    flex: 0 0 auto;
+}
+.icon-menu {
+    display: none;
+}
+
+@media (max-width: 991.98px) {
+    .header__container,
+    .menu__list{
+        column-gap: 25px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .icon-menu {
+        display: block;
+        flex: 0 0 30px;
+        height: 18px;
+        position: relative;
+        z-index: 5;
+    }
+    .icon-menu span,
+    .icon-menu::before,
+    .icon-menu::after{
+        content: "";
+        right: 0;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: red;
+    }
+    .icon-menu::before {
+        top: 0;
+    }
+    .icon-menu::after {
+        bottom: 0;
+    }
+    .icon-menu span {
+        top: calc(50% - 1px);
+        }
+        
+ .menu__body{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    left: 0;
+    top: 0;
+} 
+
+.menu__list {
+   
 }
 
 .page {
@@ -120,4 +179,4 @@ body {
 
 }
 
-    
+}  
